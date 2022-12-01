@@ -5,6 +5,8 @@ import Menu from "./components/Menu";
 import Search from "./components/Search";
 import LikeBox from "./components/LikeBox";
 import ShopItem from "./components/ShopItem/ShopItem";
+import Box from "./components/Box";
+import Clock from "./components/Clock";
 
 const menuItems = [
     {
@@ -41,10 +43,12 @@ function App() {
       {/*Masz: { new Date().getFullYear() - year } lat.*/}
       {/*<Calculator />*/}
       {/*<DisplayAnswer />*/}
-      <Menu items={menuItems} />
-      <Search />
-      <LikeBox likes={256} />
-      <ShopItem computer={computer} />
+      {/*<Menu items={menuItems} />*/}
+      {/*<Search />*/}
+      {/*<LikeBox likes={256} />*/}
+      {/*<ShopItem computer={computer} />*/}
+      {/*<Box />*/}
+      <Clock />
     </div>
   );
 }
