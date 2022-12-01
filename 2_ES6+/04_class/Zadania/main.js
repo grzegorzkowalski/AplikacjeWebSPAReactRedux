@@ -1,38 +1,37 @@
-//Stwórz klasę abstrakcyjną Vehicle. Stwórz trzy obiekty:
-//
-// boat
-// car
-// plane
-// na podstawie odpowiednich klas dziedziczących po Vehicle.
-// W odpowiednich klasach stwórz metody, które będą wypisywały
-// w konsoli informacje wyróżniające te pojazdy. Zrób to w taki sposób,
-// aby obiekt boat nie mógł jeździć ani latać, itp.
-
-
 class Vehicle {
     constructor(name) {
         this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+        return this.name;
     }
 }
 
 class Boat extends Vehicle {
     sail() {
-        console.log(`Hej nazywam się ${this.name} i pływam`);
+        console.log("Cześć nazywam się " + this.getName() + " i pływam.");
     }
 }
 
 class Car extends Vehicle {
     drive() {
-        console.log(`Hej nazywam się ${this.name} i jezdzę.`);
+        console.log("Cześć nazywam się " + this.getName() + " i jadę.");
     }
 }
 
 class Plane extends Vehicle {
     fly() {
-        console.log(`Hej nazywam się ${this.name} i latam.`);
+        console.log("Cześć nazywam się " + this.getName() + " i lecę.");
     }
 }
 
 const boat = new Boat("Niezatapialna 2");
 boat.sail();
 //boat.fly();
+
+const car = new Car("Maluch");
+car.drive();
+
+const plane = new Plane("Jastrząb");
+plane.fly();
