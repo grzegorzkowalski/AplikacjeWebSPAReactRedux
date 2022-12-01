@@ -1,10 +1,11 @@
-const Menu = () => {
+const Menu = ({items}) => {
     return (
         <ul>
-            <li><a href="/">Strona główna</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/cennik">Cennik</a></li>
-            <li><a href="/kontakt">Kontakt</a></li>
+            {
+                items.map((el, i) => {
+                    return <li key={i}><a href={el.url}>{el.text}</a></li>
+                })
+            }
         </ul>
     );
 };
