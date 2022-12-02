@@ -10,6 +10,7 @@ import Clock from "./components/Clock";
 import Buttons from "./components/Buttons";
 import TextTyper from "./components/TextTyper";
 import CustomTitle from "./components/CustomTitle";
+import Shop from "./components/Shop";
 
 const menuItems = [
     {
@@ -54,7 +55,8 @@ function App() {
       {/*<Clock />*/}
       {/*<Buttons />*/}
       {/*<TextTyper text="Witaj!" />*/}
-      <CustomTitle />
+      {/*<CustomTitle />*/}
+      <Shop />
     </div>
   );
 }
