@@ -11,6 +11,7 @@ import Buttons from "./components/Buttons";
 import TextTyper from "./components/TextTyper";
 import CustomTitle from "./components/CustomTitle";
 import Shop from "./components/Shop";
+import ButtonCounter from "./components/ButtonCounter";
 
 const menuItems = [
     {
@@ -56,7 +57,8 @@ function App() {
       {/*<Buttons />*/}
       {/*<TextTyper text="Witaj!" />*/}
       {/*<CustomTitle />*/}
-      <Shop />
+      {/*<Shop />*/}
+      <ButtonCounter />
     </div>
   );
 }
