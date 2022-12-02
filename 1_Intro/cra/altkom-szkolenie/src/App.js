@@ -15,6 +15,7 @@ import ButtonCounter from "./components/ButtonCounter";
 import NumberInfo from "./components/NumberInfo";
 import SecretStuff from "./components/SecretStuff";
 import Hello from "./components/Hello";
+import SelectOrType from "./components/SelectOrType";
 
 const menuItems = [
     {
@@ -75,7 +76,8 @@ function App() {
       {/*    correctPassword="Test123456"*/}
       {/*    secret="Nie lubię brukselki"*/}
       {/*/>*/}
-      <Hello />
+      {/*<Hello />*/}
+      <SelectOrType initCars={["BMW", "Jaguar", "Porsche"]} />
     </div>
   );
 }
