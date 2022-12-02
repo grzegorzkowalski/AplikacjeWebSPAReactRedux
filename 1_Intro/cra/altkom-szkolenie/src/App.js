@@ -7,6 +7,9 @@ import LikeBox from "./components/LikeBox";
 import ShopItem from "./components/ShopItem/ShopItem";
 import Box from "./components/Box";
 import Clock from "./components/Clock";
+import Buttons from "./components/Buttons";
+import TextTyper from "./components/TextTyper";
+import CustomTitle from "./components/CustomTitle";
 
 const menuItems = [
     {
@@ -48,7 +51,10 @@ function App() {
       {/*<LikeBox likes={256} />*/}
       {/*<ShopItem computer={computer} />*/}
       {/*<Box />*/}
-      <Clock />
+      {/*<Clock />*/}
+      {/*<Buttons />*/}
+      {/*<TextTyper text="Witaj!" />*/}
+      <CustomTitle />
     </div>
   );
 }
