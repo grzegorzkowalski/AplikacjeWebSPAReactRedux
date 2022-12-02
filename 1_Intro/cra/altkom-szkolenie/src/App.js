@@ -16,6 +16,7 @@ import NumberInfo from "./components/NumberInfo";
 import SecretStuff from "./components/SecretStuff";
 import Hello from "./components/Hello";
 import SelectOrType from "./components/SelectOrType";
+import BookInfo from "./components/BookInfo";
 
 const menuItems = [
     {
@@ -77,7 +78,8 @@ function App() {
       {/*    secret="Nie lubię brukselki"*/}
       {/*/>*/}
       {/*<Hello />*/}
-      <SelectOrType initCars={["BMW", "Jaguar", "Porsche"]} />
+      {/*<SelectOrType initCars={["BMW", "Jaguar", "Porsche"]} />*/}
+      <BookInfo isbn="0747532699" />
     </div>
   );
 }
