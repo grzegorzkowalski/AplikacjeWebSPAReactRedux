@@ -12,6 +12,8 @@ import TextTyper from "./components/TextTyper";
 import CustomTitle from "./components/CustomTitle";
 import Shop from "./components/Shop";
 import ButtonCounter from "./components/ButtonCounter";
+import NumberInfo from "./components/NumberInfo";
+import SecretStuff from "./components/SecretStuff";
 
 const menuItems = [
     {
@@ -58,7 +60,20 @@ function App() {
       {/*<TextTyper text="Witaj!" />*/}
       {/*<CustomTitle />*/}
       {/*<Shop />*/}
-      <ButtonCounter />
+      {/*<ButtonCounter />*/}
+      {/*  {*/}
+      {/*      [1,2,5,7,10,16].map((el, i) => <NumberInfo number={el} key={i} />)*/}
+      {/*  }*/}
+      <SecretStuff
+          password="Test1234"
+          correctPassword="Test1234"
+          secret="Lubię pizze ale nie mogę jej jeśc bo gluten :("
+      />
+      <SecretStuff
+          password="Test1234"
+          correctPassword="Test123456"
+          secret="Nie lubię brukselki"
+      />
     </div>
   );
 }
